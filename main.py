@@ -1,4 +1,5 @@
 import time
+import os
 print("Welcome to Py_toolish!!!")
 print("This is codemao version")
 print('ver. 0.1b')
