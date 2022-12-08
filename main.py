@@ -8,11 +8,10 @@ while y == 1:
     if  x == 2 :
         y = int(input('1.单词九连猜 \n 请选择:'))
         if y == 1:
-             import lives
+             os.system("python ./src/lives.py")
              time.sleep(2)
     if x == 3 :
-        import pwd
-        repr(pwd)
+        os.system("python ./src/pwd.py")
         time.sleep(2)
     if x == 4:
         break
