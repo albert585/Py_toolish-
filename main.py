@@ -1,8 +1,7 @@
 import time
 import os
 print("Welcome to Py_toolish!!!")
-print("This is codemao version")
-print('ver. 0.1b')
+print('ver. 0.1')
 y = 1
 while y == 1:
     x = int(input("1.计算 2. Game 3.工具 4.退出 \n你想做什么? "))
