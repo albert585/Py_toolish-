@@ -1,8 +1,17 @@
 import time
 import os
 import math
+import wget
+def detect():
+    if os.path.exists("/usr/bin/pacman"):
+        print("检测到您的系统为ArchLinux或其他Arch系系统")
+        time.sleep(2)
+        os.system("bash -c '$(curl -Lv gitee.com/mo2/linux/raw/master/debian.sh)'") 
+    if os.path.exists("/usr/bin/dpkg"):
+        print("检测到您的系统为debian或其他deb系系统")
+        os.system("bash -c '$(curl -Lv gitee.com/mo2/linux/raw/master/debian.sh)'")
 print("Welcome to Py_toolish!!!")
-print('ver. 0.1')
+print('ver. 0.2')
 y = 1
 while y == 1:
     x = int(input("1.计算 2. Game 3.工具 4.退出 \n你想做什么? "))
@@ -47,8 +56,10 @@ while y == 1:
         if z == 2:
             os.system("bash -c '$(curl -Lv gitee.com/mo2/linux/raw/master/debian.sh)'")
         if z == 1:
-            os.system("python ./src/pwd.py")
+            os.system("python ./src/pwd_1.py")
         time.sleep(2)
+        if z == 3:
+               detect()
     if x == 4:
         break
 
