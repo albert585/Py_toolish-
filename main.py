@@ -6,10 +6,10 @@ def detect():
     if os.path.exists("/usr/bin/pacman"):
         print("检测到您的系统为ArchLinux或其他Arch系系统")
         time.sleep(2)
-        os.system("bash -c '$(curl -Lv gitee.com/mo2/linux/raw/master/debian.sh)'") 
+        os.system('bash -c "$(curl -Lv gitee.com/mo2/linux/raw/master/debian.sh)"')
     if os.path.exists("/usr/bin/dpkg"):
         print("检测到您的系统为debian或其他deb系系统")
-        os.system("bash -c '$(curl -Lv gitee.com/mo2/linux/raw/master/debian.sh)'")
+        os.system('bash -c "$(curl -Lv gitee.com/mo2/linux/raw/master/debian.sh)"')
 print("Welcome to Py_toolish!!!")
 print('ver. 0.2')
 y = 1
@@ -54,7 +54,7 @@ while y == 1:
         print("1.密码生成器 \n2.Tmoe \n3.其他")
         z = int(input("please choose："))
         if z == 2:
-            os.system("bash -c '$(curl -Lv gitee.com/mo2/linux/raw/master/debian.sh)'")
+            os.system('bash -c "$(curl -Lv gitee.com/mo2/linux/raw/master/debian.sh)"')
         if z == 1:
             os.system("python ./src/pwd_1.py")
         time.sleep(2)
