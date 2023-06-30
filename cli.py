@@ -12,7 +12,7 @@ def command2(y):
 while True:
     x=str(input("fakeshell>"))
     if x=="help":
-        print("ver:显示版本 \nexit/quit:退出 \nconsole:启动控制台")
+        print("ver:显示版本 \nexit/quit:退出 \nconsole:启动控制台 \ntools工具")
     if x=="console":
         y=+1
         command2(y)
