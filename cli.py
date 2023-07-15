@@ -9,6 +9,12 @@ def command2(y):
         command(common)
         if common =="exit":
             y=-1
+def worldz():
+    if os.path.exists("/usr/bin/banner"):
+        os.system("banner WorldZ!")
+    else:
+        os.system("sudo pacman -Syyu banner")
+        os.system("banner WorldZ!")     
 while True:
     x=str(input("fakeshell>"))
     if x=="help":
@@ -20,6 +26,8 @@ while True:
         break
     if x=="quit":
         break
+    if x=="worldz":
+        worldz()
     if x=="ver":
         print("Py_toolish cli 0.0.1a")
         os.system("python3 --version")
